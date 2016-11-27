@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sky src="img/30107743894_a07dc3159a_o.jpg"></a-sky>
+        <!-- picture from https://www.flickr.com/photos/places_lost/30107743894/ -->
+        
+        <a-entity light="type: ambient; color: #CCC"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="2 10 10"></a-entity>
+
+        <a-box id="box1" depth="0.5" width="0.5" height="0.5" position="3 3 -3" color="#faa">
+            <a-animation attribute="rotation" dur="10000" from="0 0 0" to="360 360 360" repeat="indefinite" easing="linear"></a-animation>
+        </a-box>
+        <a-box id="box2" depth="0.5" width="0.5" height="0.5" position="-3 3 -3" color="#afa">
+            <a-animation attribute="rotation" dur="10000" from="10 10 10" to="360 360 360" repeat="indefinite" easing="linear"></a-animation>
+        </a-box>
+        <a-box id="box3" depth="0.5" width="0.5" height="0.5" position="3 3 3" color="#aaf">
+            <a-animation attribute="rotation" dur="10000" from="0 0 0" to="360 360 360" repeat="indefinite" easing="linear"></a-animation>
+        </a-box>
+        <a-box id="box4" depth="0.5" width="0.5" height="0.5" position="-3 3 3" color="#add">
+            <a-animation attribute="rotation" dur="10000" from="10 10 10" to="360 360 360" repeat="indefinite" easing="linear"></a-animation>
+        </a-box>
+
+    </a-scene>
+</body>
